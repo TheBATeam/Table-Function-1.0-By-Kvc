@@ -1,0 +1,62 @@
+
+ This function helps in Adding a little GUI effect into your batch program...
+ It Prints simple Table on cmd console at specified Co-ordinates :]
+ You can also provide a Text File, Containing The Data of Table And The method
+ Of printing table on CMD console. [See Example @ Bottom]
+
+ The Function uses the fastest possible algorithm to Read and print data with 
+ Proper Formatting at speciifed locations. If you find any error or Bug - It is
+ Requested to - please report it to www.thebateam.org. We'll try to fix it as 
+ soon as possible.
+ 
+
+ Syntax: call Table [X] [Y] [Rows] [Cols] [CW] [CH] [Border] [Color] [_File]
+ Syntax: call Table [help | /? | -h | -help]
+ Syntax: call Table ver
+
+ Where:-
+ X 		= X Co-ordinate of Top-Left corner of the Table
+ Y 		= Y Ordinate of Top-Left corner of the Table
+ Rows 		= No. of Rows to show in the Table
+ Cols		= No. of Columns to show in the Table
+ CW 		= Width of One Cell in Characters 
+ CH 		= Height of One Cell in Characters
+ Border	= The Border type to select for the Table's display. [0,1,2]
+ Color		= Color of the Table [Hex Code: 0F,08,07 etc.]
+ File		= Table Database File for the function [Comments+Table Data]
+		  File should have *.table ext.
+ ver		= Version of Table function
+
+
+ Example:-
+ Call Table 15 5 3 3 10 1 1 07 TestFile.Table
+
+ Where, TestFile.table - File should be as Follows:
+ -------------------------------------------------------------------------------
+ Column
+ 
+ # The first line, must contain the method of printing... it can be either 'Row'
+ # or 'Column' - Based on your requirement. [One word Method selection]
+ #
+ # All Lines, after '#' Are Comments...
+ 
+ Data 1
+ Data 2
+ Data 3
+ Data 4
+ Data 5
+ Data 6
+ Data 7
+ Data 8
+ Data 9
+ Data 10
+ # Quite simple... Isn't it?
+ -------------------------------------------------------------------------------
+ 
+ This version  of Table function contains much more GUI Capabilities.
+ As it uses batbox.exe and calls it only once at the end of calculation...
+ For the most efficient output.
+
+ Created By "Karanveer Chouhan" aka 'Kvc'
+ Visit www.thebateam.org for more...
+ #TheBATeam
